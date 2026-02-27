@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- Colores base -->
+    <SolidColorBrush x:Key="Marron_Oscuro">#4C3529</SolidColorBrush>
+    <SolidColorBrush x:Key="Naranja_Cobre">#D48642</SolidColorBrush>
+    <SolidColorBrush x:Key="Verde_Azulado">#8FADA5</SolidColorBrush>
+    <SolidColorBrush x:Key="Marron_Naranja">#9E5429</SolidColorBrush>
+    <SolidColorBrush x:Key="Gris_Azulado">#83949D</SolidColorBrush>
+    
+</ResourceDictionary>
