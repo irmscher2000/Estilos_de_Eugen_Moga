@@ -76,7 +76,7 @@
 
         <!-- H1 con Texto Boton mas Imagen  --> 
 		<Border Background="#F1EEEA" >
-			<Grid>
+    <Grid>
 				<!-- Hoal -->
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -118,8 +118,8 @@
                            Margin="40"/>
                 </Border>
                 
-                
-            </Grid>
+        
+    </Grid>
 		</Border>
         
         <!-- Prueba -->
