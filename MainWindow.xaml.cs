@@ -24,5 +24,7 @@ namespace Estilos_de_Eugen_Moga
         {
             InitializeComponent();
         }
+
+       
     }
 }

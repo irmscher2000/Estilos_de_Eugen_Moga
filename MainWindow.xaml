@@ -12,8 +12,8 @@
         <!-- HEADER MENU -->
         <Border Background="White"
             Padding="20"
-            BorderBrush="#E0E0E0"
-            BorderThickness="0,0,0,1"
+            BorderBrush="{StaticResource TextSecondaryBrush}"
+            BorderThickness="0,0,0,2"
             DockPanel.Dock="Top">
             
             
@@ -38,7 +38,7 @@
                                FontSize="20"
                                FontWeight="Bold"
                                Margin="10,0,0,0"
-                               Foreground="{StaticResource Marron_Oscuro}"
+                               Foreground="{StaticResource TextPrimaryBrush}"
                                DockPanel.Dock="Left"/>
 
                 </StackPanel>
@@ -53,20 +53,20 @@
                     <TextBlock Text="Inicio"
                                Margin="15,0"
                                FontWeight="Bold"
-                               Foreground="{StaticResource Naranja_Cobre}"
+                               Foreground="{StaticResource ButtonPrimaryBrush}"
                                Background="#D9D9D9"/>
 
                     <TextBlock Text="Sobre"
                                Margin="15,0"
-                               Foreground="{StaticResource Gris_Azulado}"/>
+                               Foreground="{StaticResource TextSecondaryBrush}"/>
 
                     <TextBlock Text="Servicios"
                                Margin="15,0"
-                               Foreground="{StaticResource Gris_Azulado}"/>
+                               Foreground="{StaticResource TextSecondaryBrush}"/>
 
                     <TextBlock Text="Contacto"
                                Margin="15,0"
-                               Foreground="{StaticResource Gris_Azulado}"/> 
+                               Foreground="{StaticResource TextSecondaryBrush}"/> 
 
                 </StackPanel>
                 
@@ -74,7 +74,53 @@
 
         </Border>
 
-        <!-- AQUÍ IRÁ EL CONTENIDO PRINCIPAL  -->
+        <!-- H1 con Texto Boton mas Imagen  --> 
+		<Border Background="#F1EEEA" >
+			<Grid>
+				<!-- Hoal -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions> 
+                
+                <!-- Columna izquierda -->
+                <StackPanel Grid.Column="0"
+                            
+                            VerticalAlignment="Top"
+                            Margin="40,40,40,0">
+                    
+                    <!-- H1 -->
+                    <TextBlock Text="Desarrollamos el Futuro Digital"
+                               HorizontalAlignment="Center"/>
+                    
+                    <!-- Texto -->
+                    <TextBlock Text="En el grado superior de Desarrollo de aplicaciones multiplataforma, 
+                                     aprenderás a crear aplicaciones que funcionen en diversos sistemas operativos. 
+                                     Diseñarás interfaces de usuario intuitivas y atractivas."
+                               TextAlignment="Left"
+                               Margin="40"/>
+                    
+                    <!-- Botón -->
+                    <Button Content="Contactar Ahora"
+                            Margin="40"/>
+
+
+                </StackPanel>
+                
+                <!-- Columna Izquierda Imagen -->
+                <Border Grid.Column="1"
+                        CornerRadius="16"
+                        ClipToBounds="True"
+                        HorizontalAlignment="Right">
+
+                    <Image Source="/Images/escritorio.png"
+                           VerticalAlignment="Top"
+                           Margin="40"/>
+                </Border>
+                
+                
+            </Grid>
+		</Border>
 
     </DockPanel>
 
