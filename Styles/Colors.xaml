@@ -7,5 +7,7 @@
     <Color x:Key="Verde_Azulado">#8FADA5</Color>
     <Color x:Key="Marron_Naranja">#9E5429</Color>
     <Color x:Key="Gris_Azulado">#83949D</Color>
-    
+    <Color x:Key="Blanco">#FFFFFF</Color>
+    <Color x:Key="Negro">#000</Color>
+
 </ResourceDictionary>

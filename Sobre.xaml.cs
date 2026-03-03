@@ -16,24 +16,15 @@ using System.Windows.Shapes;
 namespace Estilos_de_Eugen_Moga
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para Sobre.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Sobre : Page
     {
-        public MainWindow()
+        public Sobre()
         {
             InitializeComponent();
         }
 
-        private void Inicio_Click(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Navigate(new MainPage());
-        }
-
-        private void Sobre_Click(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Navigate(new Sobre());
-        }
-       
+        
     }
 }

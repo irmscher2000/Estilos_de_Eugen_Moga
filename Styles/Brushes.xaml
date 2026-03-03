@@ -18,6 +18,9 @@
     <SolidColorBrush x:Key="TextSecondaryBrush"
                      Color="{StaticResource Gris_Azulado}" />
 
+    <SolidColorBrush x:Key="TextSubtitleBrush" 
+                     Color="{StaticResource Negro}" />
+
     <!-- Botones -->
     <SolidColorBrush x:Key="ButtonPrimaryBrush"
                      Color="{StaticResource Naranja_Cobre}" />
@@ -26,7 +29,7 @@
                      Color="{StaticResource Marron_Naranja}" />
 
     <SolidColorBrush x:Key="ButtonTextBrush"
-                     Color="White" />
+                     Color="{StaticResource Blanco}" />
 
     <!-- Iconos -->
     <SolidColorBrush x:Key="IconBrush"
