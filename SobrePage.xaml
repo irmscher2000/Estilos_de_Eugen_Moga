@@ -10,12 +10,15 @@
     <StackPanel>
 
         <!-- SECCION SOBRE -->
-        <Border Background="#F1EEEA" Padding="60,50">
+        <Border Background="#F1EEEA" Padding="30,30">
 
             <StackPanel HorizontalAlignment="Center">
 
-                <TextBlock Text="Sobre DAM 
-Desarrollo Aplicaciones Multiplataforma"
+                <TextBlock Text="Sobre DAM"
+                           Style="{StaticResource H1Text}"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Center"/>
+                <TextBlock Text="Desarrollo Aplicaciones Multiplataforma"
                            Style="{StaticResource H1Text}"/>
 
                 <TextBlock Text="Somos una empresa líder en formación y desarrollo de software con más de 15 años de experiencia ayudando a alumnos y empresas a lograr sus objetivos."
@@ -47,6 +50,7 @@ Desarrollo Aplicaciones Multiplataforma"
                     <TextBlock TextWrapping="Wrap" 
                                MaxWidth="600"
                                Style="{StaticResource BodyText}"
+                               HorizontalAlignment="Left"
                                Margin="0,0,0,15"
                                Text="DAM nació en 2010 con la visión de democratizar el acceso a la tecnología de calidad. Desde nuestros humildes comienzos como un pequeño equipo de desarrolladores apasionados, hemos crecido hasta convertirnos en un referente del sector de la formación."/>
 
@@ -54,12 +58,14 @@ Desarrollo Aplicaciones Multiplataforma"
                     <TextBlock TextWrapping="Wrap"
                                MaxWidth="600"
                                Style="{StaticResource BodyText}"
+                               HorizontalAlignment="Left"
                                Margin="0,0,0,15"
                                Text="A lo largo de los años, hemos tenido el privilegio de formar  a más de 10000 alumnos, desde estudiantes particulares hasta grandes corporaciones, enseñando nuestros conocimientos."/>
 
                     <TextBlock TextWrapping="Wrap"
                                MaxWidth="600"
                                Style="{StaticResource BodyText}"
+                               HorizontalAlignment="Left"
                                Text="Hoy, nuestro equipo de más de 50 profesores continúa comprometido con la enseñanza, la innovación y la satisfacción del estudiante en cada curso que empezamos."/>
 
                 </StackPanel>

@@ -21,7 +21,7 @@
                 <!-- Columna izquierda -->
                 <StackPanel Grid.Column="0"
                             VerticalAlignment="Top"
-                            Margin="40,40,20,40">
+                            Margin="40,40,10,40">
 
                     <!-- H1 -->
                     <TextBlock Text="Desarrollamos el Futuro Digital"
@@ -37,7 +37,8 @@
                     <!-- Botón -->
                     <Button Content="Contactar Ahora"
                             HorizontalAlignment="Center"
-                            Style="{StaticResource PrimaryButton}"/>
+                            Style="{StaticResource PrimaryButton}"
+                            Click="Contactar_Click"/>
 
                 </StackPanel>
 

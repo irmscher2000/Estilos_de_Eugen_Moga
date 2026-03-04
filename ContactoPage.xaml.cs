@@ -16,19 +16,13 @@ using System.Windows.Shapes;
 namespace Estilos_de_Eugen_Moga
 {
     /// <summary>
-    /// Lógica de interacción para MainPage.xaml
+    /// Lógica de interacción para ContactoPage.xaml
     /// </summary>
-    public partial class MainPage : Page
+    public partial class ContactoPage : Page
     {
-        public MainPage()
+        public ContactoPage()
         {
             InitializeComponent();
-        }
-
-        private void Contactar_Click(object sender, RoutedEventArgs e)
-        {
-            var mainWindow = Application.Current.MainWindow as MainWindow;
-            mainWindow?.MainFrame.Navigate(new ContactoPage());
         }
     }
 }

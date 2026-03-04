@@ -55,12 +55,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ContactoPage.xaml.cs">
+      <DependentUpon>ContactoPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Sobre.xaml.cs">
-      <DependentUpon>Sobre.xaml</DependentUpon>
+    <Compile Include="ServiciosPage.xaml.cs">
+      <DependentUpon>ServiciosPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SobrePage.xaml.cs">
+      <DependentUpon>SobrePage.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ContactoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -77,7 +87,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Sobre.xaml">
+    <Page Include="ServiciosPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SobrePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -139,6 +153,19 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\historia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\check_gris.png" />
+    <Resource Include="Images\check_naranja.png" />
+    <Resource Include="Images\interfaces.png" />
+    <Resource Include="Images\java.png" />
+    <Resource Include="Images\sql.png" />
+    <Resource Include="Images\web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mail.png" />
+    <Resource Include="Images\telefono.png" />
+    <Resource Include="Images\ubicacion.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

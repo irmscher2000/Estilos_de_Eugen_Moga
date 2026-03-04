@@ -11,18 +11,22 @@
     
     
 
-    <StackPanel>
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
         
 
         <!-- HEADER MENU -->
-        <Border Background="White"
-            Padding="20"
-            BorderBrush="{StaticResource TextSecondaryBrush}"
-            BorderThickness="0,0,0,2"
-            DockPanel.Dock="Top">
-            
-            
+        <Border Grid.Row="0"
+                Background="White"
+                Padding="20"
+                BorderBrush="{StaticResource TextSecondaryBrush}"
+                BorderThickness="0,0,0,2">
+
             <Grid>
 
                 <Grid.ColumnDefinitions>
@@ -58,11 +62,10 @@
 
                     <TextBlock Text="Inicio"
                                Margin="15,0"
-                               FontWeight="Bold"
-                               Foreground="{StaticResource ButtonPrimaryBrush}"
-                               Background="#D9D9D9"
+                               Foreground="{StaticResource TextSecondaryBrush}"
                                Style="{StaticResource MenuItemStyle}"
-                               Cursor="Hand"/>
+                               Cursor="Hand"
+                               MouseLeftButtonUp="Inicio_Click"/>
 
                     <TextBlock Text="Sobre"
                                Margin="15,0"
@@ -75,13 +78,14 @@
                                Margin="15,0"
                                Foreground="{StaticResource TextSecondaryBrush}"
                                Style="{StaticResource MenuItemStyle}"
-                               Cursor="Hand"/>
-                                <!-- MouseLeftButtonDown="Servicio_Click"/> -->  
+                               Cursor="Hand"
+                               MouseLeftButtonDown="Servicio_Click"/>   
 
                     <TextBlock Text="Contacto"
                                Margin="15,0"
                                Foreground="{StaticResource TextSecondaryBrush}"
-                               Style="{StaticResource ButtonText}" /> 
+                               Style="{StaticResource MenuItemStyle}"
+                               MouseLeftButtonDown="Contacto_Click"/> 
 
                 </StackPanel>
                 
@@ -89,11 +93,12 @@
 
         </Border>
 
-        <Frame x:Name="MainFrame"
+        <Frame Grid.Row="1"
+               x:Name="MainFrame"
                NavigationUIVisibility="Hidden"
                Source="MainPage.xaml"/>
             
 
-    </StackPanel>
+    </Grid>
 
 </Window>

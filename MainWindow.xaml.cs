@@ -23,6 +23,7 @@ namespace Estilos_de_Eugen_Moga
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void Inicio_Click(object sender, RoutedEventArgs e)
@@ -34,6 +35,18 @@ namespace Estilos_de_Eugen_Moga
         {
             MainFrame.Navigate(new Sobre());
         }
+
+        private void Servicio_Click(object sender, RoutedEventArgs e) 
+        {
+            MainFrame.Navigate(new ServiciosPage());
+        }
+
+        private void Contacto_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new ContactoPage());
+        }
+
+        
        
     }
 }
